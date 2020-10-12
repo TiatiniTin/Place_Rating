@@ -4,6 +4,11 @@ C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\Box
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.csprojAssemblyReference.cache
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.AssemblyInfoInputs.cache
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.AssemblyInfo.cs
-C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.csproj.CoreCompileInputs.cache
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.dll
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.pdb
+C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\Xamarin.Forms.Core.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\Xamarin.Forms.Platform.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\Xamarin.Forms.Core.pdb
+C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\Xamarin.Forms.Core.xml
+C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.csproj.CoreCompileInputs.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.csproj.CopyComplete

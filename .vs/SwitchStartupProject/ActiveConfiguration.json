@@ -1,4 +1,4 @@
 {
-  "Type": "Single",
-  "Name": "Place_Rating\\Place_Rating.Android\\Place_Rating.Android.csproj"
+  "Type": "Multi",
+  "Name": "Server + App"
 }

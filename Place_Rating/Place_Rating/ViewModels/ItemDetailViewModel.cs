@@ -5,6 +5,9 @@ using BoxProtocol.Models;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using BoxProtocol;
+using Grpc.Core;
+using BoxProtocol.Interfaces;
+using MagicOnion.Client;
 
 namespace Place_Rating.ViewModels
 {
@@ -15,7 +18,8 @@ namespace Place_Rating.ViewModels
         private string place_name;
         private string place_description;
         private string place_rating;
-        private Location place_location;
+        private double place_location_Longitude;
+        private double place_location_Latitude;
         private string place_image_path;
         private DateTime time_created;
         private string name;
@@ -43,15 +47,14 @@ namespace Place_Rating.ViewModels
             get => time_created;
             set => SetProperty(ref time_created, DateTime.Now);
         }
-        public Location Place_location
+        public double Place_location_Latitude
         {
-            get => place_location;
-            set => SetProperty(ref place_location, get_location());
+            get => place_location_Latitude;
+            set => SetProperty(ref place_location_Latitude, get_location_Latitude());
         }
 
-        public Location get_location()
+        public double get_location_Latitude()
         {
-            //string unkn_loc = "unknown location";
             try
             {
                 var location = Geolocation.GetLastKnownLocationAsync().Result;
@@ -61,7 +64,7 @@ namespace Place_Rating.ViewModels
                 if (location != null)
                 {
                     //Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
-                    return location;
+                    return location.Latitude;
                 }
             }
             catch (FeatureNotSupportedException )
@@ -84,7 +87,50 @@ namespace Place_Rating.ViewModels
                 // Unable to get location
 
             }
-            return null;
+            return -1;
+        }
+
+        public double Place_location_Longitude
+        {
+            get => place_location_Longitude;
+            set => SetProperty(ref place_location_Longitude, get_location_Longitude());
+        }
+
+        public double get_location_Longitude()
+        {
+            try
+            {
+                var location = Geolocation.GetLastKnownLocationAsync().Result;
+                //var request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
+                //Location location = Geolocation.GetLocationAsync(request).Result;
+
+                if (location != null)
+                {
+                    //Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+                    return location.Longitude;
+                }
+            }
+            catch (FeatureNotSupportedException)
+            {
+                // Handle not supported on device exception
+
+            }
+            catch (FeatureNotEnabledException)
+            {
+                // Handle not enabled on device exception
+
+            }
+            catch (PermissionException)
+            {
+                // Handle permission exception
+
+            }
+            catch (Exception)
+            {
+                // Unable to get location
+
+            }
+            return -1;
         }
 
         public string Name
@@ -107,26 +153,29 @@ namespace Place_Rating.ViewModels
             set
             {
                 itemId = value;
-                new Command(async () => await LoadItemId(value));
+                //new Command(async () => await LoadItemId(value));
+                LoadItemId(value);
             }
         }
 
-        public async Task LoadItemId(string itemId)
+        async Task LoadItemId(string itemId)
         {
             try
             {
-                var DataStore = new ServerDB();
+                //var channel = new Channel("10.0.2.2", 12345, ChannelCredentials.Insecure);
+                var channel = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure);
+                var DataStore = MagicOnionClient.Create<IServerDB>(channel);
 
                 Item item = await DataStore.Get(itemId);
                 Id = item.Id;
                 Name = item.Name;
-                Place_name = item.Place_name;
-                Place_location = item.Place_location;
-                Place_description = item.Place_description;
-                Place_rating = item.Place_rating;
                 Place_image_path = item.Place_image_path;
+                Place_name = item.Place_name;
+                Place_rating = item.Place_rating;
+                Place_location_Latitude = item.Place_location_Latitude;
+                Place_location_Longitude = item.Place_location_Longitude;
+                Place_description = item.Place_description;
                 Time_created = item.Time_created;
-
             }
             catch (Exception)
             {

@@ -13,6 +13,9 @@
   <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:label="Place_Rating.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+    <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.companyname.place_rating.fileprovider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
+    </provider>
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="Place_Rating" android:theme="@style/MainTheme" android:name="crc64b703260120ee4676.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

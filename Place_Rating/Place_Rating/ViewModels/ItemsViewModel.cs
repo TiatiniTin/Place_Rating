@@ -10,6 +10,8 @@ using Place_Rating.Views;
 using Xamarin.Essentials;
 using MagicOnion.Client;
 using Grpc.Core;
+using BoxProtocol.Interfaces;
+using MessagePack;
 
 namespace Place_Rating.ViewModels
 {
@@ -32,17 +34,20 @@ namespace Place_Rating.ViewModels
 
         async Task ExecuteLoadItemsCommand()
         {
-            var DataStore = new ServerDB();
+            //var channel = new Channel("10.0.2.2", 12345, ChannelCredentials.Insecure);
+            var channel = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure);
+            var DataStore = MagicOnionClient.Create<IServerDB>(channel);
+
             IsBusy = true;
-            var location = Geolocation.GetLastKnownLocationAsync().Result;
-            Item item_1 = new Item
+            //var location = Geolocation.GetLastKnownLocationAsync().Result;
+            /*Item item_1 = new Item
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = "First person",
                 Place_image_path = "isaak.jpg",
                 Place_name = "Исаакиевский собор",
                 Place_rating = "10/10",
-                Place_location = location,
+                //Place_location = location,
                 Place_description = "This is an item description.",
                 Time_created = DateTime.Now
             };
@@ -53,12 +58,12 @@ namespace Place_Rating.ViewModels
                 Place_image_path = "Hermitage.jpg",
                 Place_name = "Эрмитаж",
                 Place_rating = "10/10",
-                Place_location = location,
+                //Place_location = location,
                 Place_description = "This is an item description.",
                 Time_created = DateTime.Now
             };
             await DataStore.Add(item_1);
-            await DataStore.Add(item_2);
+            await DataStore.Add(item_2);*/
 
             try
             {

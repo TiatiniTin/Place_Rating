@@ -10,7 +10,6 @@ C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\nets
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Views\AboutPage.xaml.g.cs
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Views\ItemDetailPage.xaml.g.cs
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Views\ItemsPage.xaml.g.cs
-C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Views\LoginPage.xaml.g.cs
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Views\NewItemPage.xaml.g.cs
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Place_Rating.AssemblyInfoInputs.cache
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Place_Rating.AssemblyInfo.cs

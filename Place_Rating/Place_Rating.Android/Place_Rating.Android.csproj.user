@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>HUAWEI COL-L29</SelectedDevice>
     <DefaultDevice>Android_Accelerated_x86_Nougat</DefaultDevice>
+    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

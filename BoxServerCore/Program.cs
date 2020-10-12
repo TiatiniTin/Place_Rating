@@ -24,7 +24,8 @@ namespace BoxServerCore
             var magicOnionHost = MagicOnionHost.CreateDefaultBuilder()
                 .UseMagicOnion(
                     new MagicOnionOptions(true),
-                    new ServerPort("127.0.0.1", 12345, ServerCredentials.Insecure)
+                    //new ServerPort("127.0.0.1", 12345, ServerCredentials.Insecure)
+                    new ServerPort("0.0.0.0", 12345, ServerCredentials.Insecure)
                 )
                 .UseConsoleLifetime()
                 .Build();
@@ -44,7 +45,7 @@ namespace BoxServerCore
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
-                .UseUrls("http://0.0.0.0:9999")
+                .UseUrls("http://0.0.0.0:9998")
                 .Build();
             //webHost.Run();
             // Run and wait both.
@@ -74,7 +75,7 @@ namespace BoxServerCore
             );
             app.UseMagicOnionHttpGateway(
                 magicOnion.MethodHandlers,
-                new Channel("127.0.0.1:12345", ChannelCredentials.Insecure)
+                new Channel("0.0.0.0:12345", ChannelCredentials.Insecure)
             );
         }
     }

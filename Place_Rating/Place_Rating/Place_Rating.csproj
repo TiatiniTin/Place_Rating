@@ -16,4 +16,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\BoxProtocol\BoxProtocol.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Sample\" />
+  </ItemGroup>
 </Project>

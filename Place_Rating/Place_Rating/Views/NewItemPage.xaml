@@ -5,6 +5,7 @@
              Shell.PresentationMode="ModalAnimated"
              Title="New Item">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout Spacing="3" Padding="15">
             <!--<Label Text="Text" FontSize="Medium" />
             <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
@@ -12,25 +13,31 @@
             <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />-->
 
             <Label Text="Name:" FontSize="Medium" />
-            <Entry Text="{Binding Name, Mode=TwoWay}" FontSize="Small"/>
-            <Entry Text="{Binding Place_image_path, Mode=TwoWay}" FontSize="Small"/>
-            <Label Text="Place name:" FontSize="Medium" />
-            <Entry Text="{Binding Place_name, Mode=TwoWay}" FontSize="Small"/>
-            <Label Text="Place location:" FontSize="Medium" />
+                <Entry Text="{Binding Name, Mode=TwoWay}" FontSize="Small"/>
+                <!--<Entry Text="{Binding Place_image_path, Mode=TwoWay}" FontSize="Small"/>-->
+            <StackLayout Orientation="Horizontal">
+                    <Button Text="Take photo" Command="{Binding TakePhotoCommand}" HorizontalOptions="FillAndExpand"></Button>
+                    <!--<Button Text="Pick photo" Command="{Binding PickPhotoCommand}" HorizontalOptions="FillAndExpand"></Button>-->
+            </StackLayout>
+                <Label Text="Place name:" FontSize="Medium" />
+                <Entry Text="{Binding Place_name, Mode=TwoWay}" FontSize="Small"/>
+            <!--<Label Text="Place location:" FontSize="Medium" />
             <Label Text="{Binding Place_location.Latitude, Mode=TwoWay}" FontSize="Small"/>
-            <Label Text="{Binding Place_location.Longitude, Mode=TwoWay}" FontSize="Small"/>
+            <Label Text="{Binding Place_location.Longitude, Mode=TwoWay}" FontSize="Small"/>-->
             <Label Text="Place rating:" FontSize="Medium" />
-            <Entry Text="{Binding Place_rating, Mode=TwoWay}" FontSize="Small"/>
+                <Entry Text="{Binding Place_rating, Mode=TwoWay}" FontSize="Small"/>
             <Label Text="Place description:" FontSize="Medium" />
-            <Entry Text="{Binding Place_description, Mode=TwoWay}" FontSize="Small"/>
+                <Entry Text="{Binding Place_description, Mode=TwoWay}" FontSize="Small"/>
             <Label Text="Adding time:" FontSize="Medium" />
-            <Label Text="{Binding Time_created, Mode=TwoWay}" FontSize="Small"/>
+                <Label Text="{Binding Time_created, Mode=TwoWay}" FontSize="Small"/>
 
             <StackLayout Orientation="Horizontal">
                 <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
                 <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
             </StackLayout>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
-    
+
+
 </ContentPage>

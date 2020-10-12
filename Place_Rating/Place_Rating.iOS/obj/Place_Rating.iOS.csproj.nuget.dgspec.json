@@ -49,9 +49,33 @@
               "target": "Package",
               "version": "[3.0.13, )"
             },
+            "MessagePack": {
+              "target": "Package",
+              "version": "[2.2.60, )"
+            },
+            "MessagePack.AspNetCoreMvcFormatter": {
+              "target": "Package",
+              "version": "[2.2.60, )"
+            },
+            "MessagePack.ReactiveProperty": {
+              "target": "Package",
+              "version": "[2.2.60, )"
+            },
+            "MessagePack.UnityShims": {
+              "target": "Package",
+              "version": "[2.2.60, )"
+            },
+            "MessagePackAnalyzer": {
+              "target": "Package",
+              "version": "[2.2.60, )"
+            },
             "NEST": {
               "target": "Package",
               "version": "[7.9.0, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
