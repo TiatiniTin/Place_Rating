@@ -1,7 +1,6 @@
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\BoxProtocol.deps.json
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\BoxProtocol.dll
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\BoxProtocol.pdb
-C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.csprojAssemblyReference.cache
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.AssemblyInfoInputs.cache
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.AssemblyInfo.cs
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.dll

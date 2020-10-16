@@ -1,0 +1,81 @@
+﻿@page "/"
+@page "/box/{Guid:guid}"
+@using MatBlazor
+@using System.Net.Mime
+@using System.IO
+@using BoxProtocol
+@using Grpc.Core
+@using MagicOnion.Client
+@using BoxProtocol.Interfaces;
+@using BoxProtocol.Models;
+<h1>Place Rating App</h1>
+
+@code
+{ [Parameter]
+    public Guid Guid { get; set; }
+}
+@code
+{
+    public async Task<List<Item>> GetAllItems()
+    {
+        var channel = new Channel("127.0.0.1", 12345, ChannelCredentials.Insecure);
+        var DataStore = MagicOnionClient.Create<IServerDB>(channel);
+        var items = await DataStore.GetAll();
+        
+        //var channel1 = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure);
+        return items;
+    }
+}
+
+<MatCard class="demo-mat-card mat-elevation-z24">
+    <MatCardContent>
+        <div class="demo-mat-card-content">
+            <MatHeadline6 class="demo-mat-card-clean-margin">
+                HISTORY
+            </MatHeadline6>
+        </div>
+
+        <table>
+            @{
+                int counter = 0;
+                var items = GetAllItems().Result;
+             }
+            @foreach (var item in items)
+            {
+                <tr>
+                    counter++;
+                    <td>
+                        @counter;
+                    </td>
+                    <td>
+                        @item.Id;
+                    </td>
+                    <td>
+                        @item.Name;
+                    </td>
+                    <td>
+                        @item.Place_image_path;
+                    </td>
+                    <td>
+                        @item.Place_name;
+                    </td>
+                    <td>
+                        @item.Place_rating;
+                    </td>
+                    <td>
+                        @item.Place_location_Longitude;
+                    </td>
+                    <td>
+                        @item.Place_location_Latitude;
+                    </td>
+                    <td>
+                        @item.Place_description;
+                    </td>
+                    <td>
+                        @item.Time_created;
+                    </td>
+                </tr>
+            }
+        </table>
+    </MatCardContent>
+</MatCard>

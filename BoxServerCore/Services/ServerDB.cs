@@ -36,7 +36,7 @@ namespace BoxProtocol
             return new UnaryResult<bool>(true);
         }
 
-        public UnaryResult<bool> Update(Item updated)
+        /*public UnaryResult<bool> Update(Item updated)
         {
             Client().Update<Item>(updated.Id, descriptor => descriptor.Doc(updated).Index("data_base"));
             return new UnaryResult<bool>(true);
@@ -46,7 +46,7 @@ namespace BoxProtocol
         {
             Client().Delete<Item>(id, descriptor => descriptor.Index("data_base"));
             return new UnaryResult<bool>(true);
-        }
+        }*/
 
         public UnaryResult<Item> Get(string id) 
         {
@@ -63,7 +63,7 @@ namespace BoxProtocol
             return new UnaryResult<List<Item>>(docs.Documents.ToList());
         }      
 
-        public UnaryResult<List<Item>> GetOnLocation(GeoLocation point) 
+        /*public UnaryResult<List<Item>> GetOnLocation(GeoLocation point) 
         {
             var docs = Client().Search<Item>(s => s
                 .Query(query => query.GeoDistance(
@@ -72,7 +72,7 @@ namespace BoxProtocol
                 )
             );
             return new UnaryResult<List<Item>>(docs.Documents.ToList());
-        }
+        }*/
         
     }
 }

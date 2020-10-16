@@ -45,7 +45,7 @@ namespace BoxServerCore
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
-                .UseUrls("http://0.0.0.0:9998")
+                .UseUrls("http://0.0.0.0:9999")
                 .Build();
             //webHost.Run();
             // Run and wait both.
@@ -75,7 +75,7 @@ namespace BoxServerCore
             );
             app.UseMagicOnionHttpGateway(
                 magicOnion.MethodHandlers,
-                new Channel("0.0.0.0:12345", ChannelCredentials.Insecure)
+                new Channel("127.0.0.1:12345", ChannelCredentials.Insecure)
             );
         }
     }

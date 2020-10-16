@@ -1,0 +1,161 @@
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.StaticWebAssets.xml
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.exe
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.deps.json
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.runtimeconfig.json
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.runtimeconfig.dev.json
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.pdb
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.Views.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.Views.pdb
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Grpc.Core.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\MagicOnion.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\MagicOnion.Abstractions.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\MagicOnion.HttpGateway.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\MatBlazor.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\MessagePack.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\MessagePack.Annotations.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Nest.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\linux\native\libgrpc_csharp_ext.x64.so
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\linux\native\libgrpc_csharp_ext.x86.so
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\osx\native\libgrpc_csharp_ext.x64.dylib
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\osx\native\libgrpc_csharp_ext.x86.dylib
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\win\native\grpc_csharp_ext.x64.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\win\native\grpc_csharp_ext.x86.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\BoxProtocol.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\bin\Debug\netcoreapp3.1\BoxProtocol.pdb
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.csprojAssemblyReference.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.AssemblyInfoInputs.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.AssemblyInfo.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.csproj.CoreCompileInputs.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorComponent.input.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\ServerWebUi.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.TagHelpers.input.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.TagHelpers.output.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorCoreGenerate.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorAssemblyInfo.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorAssemblyInfo.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorTargetAssemblyInfo.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorTargetAssemblyInfo.cs
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.Views.pdb
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.csproj.CopyComplete
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\staticwebassets\ServerWebUi.StaticWebAssets.Manifest.cache
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\staticwebassets\ServerWebUi.StaticWebAssets.xml
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.dll
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.pdb
+C:\Users\Vitya\Desktop\MagicOnion-Blazor-MaterialUI-Python-Swagger-101-master\CSharp\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.genruntimeconfig.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.csprojAssemblyReference.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.AssemblyInfoInputs.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.AssemblyInfo.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.csproj.CoreCompileInputs.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorComponent.input.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.pdb
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.StaticWebAssets.xml
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.exe
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.deps.json
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.runtimeconfig.json
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.runtimeconfig.dev.json
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.pdb
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.Views.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ServerWebUi.Views.pdb
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Grpc.Core.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\MagicOnion.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\MagicOnion.Abstractions.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\MatBlazor.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\MessagePack.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\MessagePack.Annotations.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\MessagePack.AspNetCoreMvcFormatter.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\MessagePack.ReactiveProperty.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\MessagePack.UnityShims.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Nest.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\ReactiveProperty.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\System.Reactive.Core.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\System.Reactive.Interfaces.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\System.Reactive.Linq.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\System.Reactive.PlatformServices.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Plugin.Media.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\Xamarin.Essentials.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\linux\native\libgrpc_csharp_ext.x64.so
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\linux\native\libgrpc_csharp_ext.x86.so
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\osx\native\libgrpc_csharp_ext.x64.dylib
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\osx\native\libgrpc_csharp_ext.x86.dylib
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\win\native\grpc_csharp_ext.x64.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\runtimes\win\native\grpc_csharp_ext.x86.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\BoxProtocol.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\bin\Debug\netcoreapp3.1\BoxProtocol.pdb
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\RazorDeclaration\ServerWebUi.dll
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.TagHelpers.input.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.TagHelpers.output.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorCoreGenerate.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorAssemblyInfo.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorAssemblyInfo.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorTargetAssemblyInfo.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.RazorTargetAssemblyInfo.cs
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.Views.pdb
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.csproj.CopyComplete
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\staticwebassets\ServerWebUi.StaticWebAssets.Manifest.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\staticwebassets\ServerWebUi.StaticWebAssets.xml
+C:\Users\Vitya\Desktop\Place_Rating 3.0\ServerWebUi\obj\Debug\netcoreapp3.1\ServerWebUi.genruntimeconfig.cache

@@ -57,6 +57,19 @@
         "BoxServerCore": {},
         "Place_Rating.Android": {}
       }
+    },
+    "Server + App + Web": {
+      "Projects": {
+        "BoxServerCore": {},
+        "Place_Rating.Android": {},
+        "Web": {}
+      }
+    },
+    "Server + Web": {
+      "Projects": {
+        "BoxServerCore": {},
+        "ServerWebUI": {}
+      }
     }
   }
 }
