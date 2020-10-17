@@ -18,64 +18,111 @@
 {
     public async Task<List<Item>> GetAllItems()
     {
-        var channel = new Channel("127.0.0.1", 12345, ChannelCredentials.Insecure);
+        var channel = new Channel("localhost", 12345, ChannelCredentials.Insecure);
         var DataStore = MagicOnionClient.Create<IServerDB>(channel);
         var items = await DataStore.GetAll();
-        
-        //var channel1 = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure);
         return items;
+    }
+    List<Item> _Items = new List<Item>();
+    public List<Item> Items
+    {
+        get
+        {
+            return _Items;
+        }
+        set
+        {
+            _Items = value;
+        }
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        Items = await GetAllItems();
     }
 }
 
 <MatCard class="demo-mat-card mat-elevation-z24">
     <MatCardContent>
-        <div class="demo-mat-card-content">
-            <MatHeadline6 class="demo-mat-card-clean-margin">
-                HISTORY
-            </MatHeadline6>
-        </div>
+        <div style="padding:50px;">
+            <div class="demo-mat-card-content">
+                <MatHeadline6 class="demo-mat-card-clean-margin">
+                    HISTORY
+                </MatHeadline6>
+            </div>
 
-        <table>
-            @{
-                int counter = 0;
-                var items = GetAllItems().Result;
-             }
-            @foreach (var item in items)
-            {
-                <tr>
-                    counter++;
-                    <td>
-                        @counter;
+            <table>
+                @{
+                    int counter = 0;
+                }
+                <tr style="font-weight:bold;">
+                    <td style="text-align:center;">
+                        Number
                     </td>
                     <td>
-                        @item.Id;
+                        Id
                     </td>
                     <td>
-                        @item.Name;
+                        Name
                     </td>
                     <td>
-                        @item.Place_image_path;
+                        Place image
                     </td>
                     <td>
-                        @item.Place_name;
+                        Place name
                     </td>
                     <td>
-                        @item.Place_rating;
+                        Place rating
                     </td>
                     <td>
-                        @item.Place_location_Longitude;
+                        Place location Longitude
                     </td>
                     <td>
-                        @item.Place_location_Latitude;
+                        Place location Latitude
                     </td>
                     <td>
-                        @item.Place_description;
+                        Place description
                     </td>
                     <td>
-                        @item.Time_created;
+                        Time created
                     </td>
                 </tr>
-            }
-        </table>
+                @foreach (var item in Items)
+                {
+                    <tr style="align-items:center;">
+                        @{counter++;}
+                        <td style="font-weight:bold;">
+                            @counter
+                        </td>
+                        <td>
+                            @item.Id
+                        </td>
+                        <td>
+                            @item.Name
+                        </td>
+                        <td>
+                            <!--item.Place_image_path-->
+                        </td>
+                        <td>
+                            @item.Place_name
+                        </td>
+                        <td>
+                            @item.Place_rating
+                        </td>
+                        <td>
+                            @item.Place_location_Longitude
+                        </td>
+                        <td>
+                            @item.Place_location_Latitude
+                        </td>
+                        <td>
+                            @item.Place_description
+                        </td>
+                        <td>
+                            @item.Time_created
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
     </MatCardContent>
 </MatCard>
