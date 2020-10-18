@@ -8,7 +8,10 @@ using Nest;
 using MagicOnion.Server;
 using MagicOnion;
 using System.Collections.Generic;
-
+using Plugin.Media.Abstractions;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BoxProtocol
 {
@@ -61,7 +64,20 @@ namespace BoxProtocol
                     .MatchAll())
             );
             return new UnaryResult<List<Item>>(docs.Documents.ToList());
-        }      
+        }
+
+        public UnaryResult<string> SaveImage(MediaFile photo)
+        {
+            var path = $"/Place_Rating/photo/{DateTime.Now.ToString("dd.MM.yyyy_hh.mm.ss")}.jpg";
+
+            BinaryFormatter bf = new BinaryFormatter();
+            using (var ms = new MemoryStream())
+            {
+                bf.Serialize(ms, photo); 
+                File.WriteAllBytes(path, ms.ToArray());
+            }
+            return new UnaryResult <string>(path);
+        }
 
         /*public UnaryResult<List<Item>> GetOnLocation(GeoLocation point) 
         {
@@ -74,6 +90,19 @@ namespace BoxProtocol
             return new UnaryResult<List<Item>>(docs.Documents.ToList());
         }*/
         
+        // Convert a byte array to an Object
+        public UnaryResult<MediaFile> ByteArrayToObject(byte[] arrBytes)
+        {
+            using (var memStream = new MemoryStream())
+            {
+                var binForm = new BinaryFormatter();
+                memStream.Write(arrBytes, 0, arrBytes.Length);
+                memStream.Seek(0, SeekOrigin.Begin);
+                var obj = binForm.Deserialize(memStream);
+                return new UnaryResult<MediaFile>((MediaFile)obj);
+            }
+        }
+
     }
 }
 

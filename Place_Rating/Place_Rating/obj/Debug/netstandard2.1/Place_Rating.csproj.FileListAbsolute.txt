@@ -13,9 +13,9 @@ C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\nets
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Views\NewItemPage.xaml.g.cs
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Place_Rating.AssemblyInfoInputs.cache
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Place_Rating.AssemblyInfo.cs
-C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Place_Rating.csproj.CoreCompileInputs.cache
-C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\XamlC.stamp
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Place_Rating.csproj.CopyComplete
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Place_Rating.dll
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\ref\Place_Rating.dll
 C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Place_Rating.pdb
+C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\Place_Rating.csproj.CoreCompileInputs.cache
+C:\Users\Vitya\Desktop\Place_Rating 3.0\Place_Rating\Place_Rating\obj\Debug\netstandard2.1\XamlC.stamp

@@ -11,3 +11,4 @@ C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\Xam
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\bin\Debug\netstandard2.1\Xamarin.Forms.Core.xml
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.csproj.CoreCompileInputs.cache
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.csproj.CopyComplete
+C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxProtocol\obj\Debug\netstandard2.1\BoxProtocol.csprojAssemblyReference.cache

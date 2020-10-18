@@ -62,7 +62,7 @@
       "Projects": {
         "BoxServerCore": {},
         "Place_Rating.Android": {},
-        "Web": {}
+        "ServerWebUI": {}
       }
     },
     "Server + Web": {

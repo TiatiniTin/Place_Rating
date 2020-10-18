@@ -24,7 +24,7 @@ namespace Place_Rating.ViewModels
         private string place_rating;
         private double place_location_Longitude;
         private double place_location_Latitude;
-        private string place_image_path;
+        private string Place_image_path;
         private DateTime time_created;
         private string name;
 
@@ -67,91 +67,6 @@ namespace Place_Rating.ViewModels
             get => time_created;
             set => SetProperty(ref time_created, DateTime.Now);
         }
-        /*public double Place_location_Latitude
-        {
-            get => place_location_Latitude;
-            set => SetProperty(ref place_location_Latitude, get_location_Latitude());
-        }
-
-        public double get_location_Latitude()
-        {
-            try
-            {
-                var location = Geolocation.GetLastKnownLocationAsync().Result;
-                //var request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
-                //Location location = Geolocation.GetLocationAsync(request).Result;
-
-                if (location != null)
-                {
-                    //Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
-                    return location.Latitude;
-                }
-            }
-            catch (FeatureNotSupportedException)
-            {
-                // Handle not supported on device exception
-
-            }
-            catch (FeatureNotEnabledException)
-            {
-                // Handle not enabled on device exception
-
-            }
-            catch (PermissionException)
-            {
-                // Handle permission exception
-
-            }
-            catch (Exception)
-            {
-                // Unable to get location
-
-            }
-            return -1;
-        }
-
-        public double Place_location_Longitude
-        {
-            get => place_location_Longitude;
-            set => SetProperty(ref place_location_Latitude, get_location_Longitude());
-        }
-
-        public double get_location_Longitude()
-        {
-            try
-            {
-                var location = Geolocation.GetLastKnownLocationAsync().Result;
-                //var request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
-                //Location location = Geolocation.GetLocationAsync(request).Result;
-
-                if (location != null)
-                {
-                    //Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
-                    return location.Longitude;
-                }
-            }
-            catch (FeatureNotSupportedException)
-            {
-                // Handle not supported on device exception
-
-            }
-            catch (FeatureNotEnabledException)
-            {
-                // Handle not enabled on device exception
-
-            }
-            catch (PermissionException)
-            {
-                // Handle permission exception
-
-            }
-            catch (Exception)
-            {
-                // Unable to get location
-
-            }
-            return -1;
-        }*/
 
         public string Name
         {
@@ -175,15 +90,19 @@ namespace Place_Rating.ViewModels
 
         private async void OnSave()
         {
+            
+
             //var channel = new Channel("10.0.2.2", 12345, ChannelCredentials.Insecure);
             var channel = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure);
             var DataStore = MagicOnionClient.Create<IServerDB>(channel);
+
+            Place_image_path = await DataStore.SaveImage(photo);
 
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = Name,
-                Place_image_path = img.Source.ToString().Split(' ')[1],
+                Place_image_path = Place_image_path,
                 Place_name = Place_name,
                 Place_rating = Place_rating,
                 //Place_location_ = Geolocation.GetLastKnownLocationAsync().Result,
@@ -202,34 +121,34 @@ namespace Place_Rating.ViewModels
         public Command TakePhotoCommand { get; }
         //public Command PickPhotoCommand { get; }
 
-        Image img = new Image();
-
+        public MediaFile photo;
         private async void OnTakePhoto()
         {
             if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsTakePhotoSupported)
             {
-                MediaFile file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+                photo = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
                 {
                     SaveToAlbum = true,
                     Directory = "Sample",
                     Name = $"{DateTime.Now.ToString("dd.MM.yyyy_hh.mm.ss")}.jpg"
                 });
 
-                if (file == null)
+                if (photo == null)
                     return;
 
-                img.Source = ImageSource.FromFile(file.Path);
+                //img.Source = ImageSource.FromFile(file.Path);
             }
+
         }
 
-        /*private async void OnPickPhoto()
+        private async void OnPickPhoto()
         {
             if (CrossMedia.Current.IsPickPhotoSupported)
             {
-                MediaFile photo = await CrossMedia.Current.PickPhotoAsync();
-                img.Source = ImageSource.FromFile(photo.Path);
-
+                photo = await CrossMedia.Current.PickPhotoAsync();
+                //img.Source = ImageSource.FromFile(photo.Path);
+                //return;
             }
-        }*/
+        }
     }
 }
