@@ -14,6 +14,7 @@ using Grpc.Core;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using Location = Xamarin.Essentials.Location;
+using MessagePack;
 
 namespace Place_Rating.ViewModels
 {
@@ -27,6 +28,7 @@ namespace Place_Rating.ViewModels
         private string Place_image_path;
         private DateTime time_created;
         private string name;
+        private byte[] image_arr;
 
         public NewItemViewModel()
         {
@@ -72,6 +74,11 @@ namespace Place_Rating.ViewModels
         {
             get => name;
             set => SetProperty(ref name, value);
+        }        
+        public byte[] Image_arr
+        {
+            get => image_arr;
+            set => SetProperty(ref image_arr, value);
         }
         /*public string Place_image_path
         {
@@ -90,26 +97,30 @@ namespace Place_Rating.ViewModels
 
         private async void OnSave()
         {
-            
-
             //var channel = new Channel("10.0.2.2", 12345, ChannelCredentials.Insecure);
             var channel = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure);
             var DataStore = MagicOnionClient.Create<IServerDB>(channel);
 
-            Place_image_path = await DataStore.SaveImage(photo);
+            using (FileStream fstream = File.OpenRead(Place_image_path))
+            {
+                byte[] array = new byte[fstream.Length];
+                fstream.Read(array, 0, array.Length);
+                Image_arr = MessagePackSerializer.Serialize(array);
+            }
 
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = Name,
-                Place_image_path = Place_image_path,
+                Place_image_path = null,
                 Place_name = Place_name,
                 Place_rating = Place_rating,
                 //Place_location_ = Geolocation.GetLastKnownLocationAsync().Result,
                 Place_location_Latitude = Geolocation.GetLastKnownLocationAsync().Result.Latitude,
                 Place_location_Longitude = Geolocation.GetLastKnownLocationAsync().Result.Longitude,
                 Place_description = Place_description,             
-                Time_created = Time_created
+                Time_created = Time_created,
+                Image_arr = Image_arr
             };
 
             await DataStore.Add(newItem);
@@ -121,12 +132,11 @@ namespace Place_Rating.ViewModels
         public Command TakePhotoCommand { get; }
         //public Command PickPhotoCommand { get; }
 
-        public MediaFile photo;
         private async void OnTakePhoto()
         {
             if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsTakePhotoSupported)
             {
-                photo = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+                MediaFile photo = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
                 {
                     SaveToAlbum = true,
                     Directory = "Sample",
@@ -136,19 +146,19 @@ namespace Place_Rating.ViewModels
                 if (photo == null)
                     return;
 
-                //img.Source = ImageSource.FromFile(file.Path);
+                Place_image_path = ImageSource.FromFile(photo.Path).ToString();
             }
 
         }
 
-        private async void OnPickPhoto()
+        /*private async void OnPickPhoto()
         {
             if (CrossMedia.Current.IsPickPhotoSupported)
             {
-                photo = await CrossMedia.Current.PickPhotoAsync();
+                MediaFile photo = await CrossMedia.Current.PickPhotoAsync();
                 //img.Source = ImageSource.FromFile(photo.Path);
                 //return;
             }
-        }
+        }*/
     }
 }

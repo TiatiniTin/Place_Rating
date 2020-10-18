@@ -12,6 +12,7 @@ using MagicOnion.Client;
 using Grpc.Core;
 using BoxProtocol.Interfaces;
 using MessagePack;
+using System.IO;
 
 namespace Place_Rating.ViewModels
 {
@@ -71,7 +72,18 @@ namespace Place_Rating.ViewModels
                 var items = await DataStore.GetAll();
                 foreach (var item in items)
                 {
-                    Items.Add(item);
+                    if (item.Place_image_path == null) 
+                    {
+                        var path = $"/Place_Rating/photo/{DateTime.Now.ToString("dd.MM.yyyy_hh.mm.ss")}.jpg";
+                        File.WriteAllBytes(path, item.Image_arr);
+                        item.Place_image_path = path;
+                        await DataStore.Update(item);
+                        Items.Add(item);
+                    }
+                    else
+                    {
+                        Items.Add(item);
+                    }
                 }
             }
             catch (Exception ex)

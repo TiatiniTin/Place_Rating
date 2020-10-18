@@ -39,13 +39,13 @@ namespace BoxProtocol
             return new UnaryResult<bool>(true);
         }
 
-        /*public UnaryResult<bool> Update(Item updated)
+        public UnaryResult<bool> Update(Item updated)
         {
             Client().Update<Item>(updated.Id, descriptor => descriptor.Doc(updated).Index("data_base"));
             return new UnaryResult<bool>(true);
         }
 
-        public UnaryResult<bool> Delete(string id) 
+        /*public UnaryResult<bool> Delete(string id) 
         {
             Client().Delete<Item>(id, descriptor => descriptor.Index("data_base"));
             return new UnaryResult<bool>(true);
@@ -66,7 +66,7 @@ namespace BoxProtocol
             return new UnaryResult<List<Item>>(docs.Documents.ToList());
         }
 
-        public UnaryResult<string> SaveImage(MediaFile photo)
+        /*public UnaryResult<string> SaveImage(MediaFile photo)
         {
             var path = $"/Place_Rating/photo/{DateTime.Now.ToString("dd.MM.yyyy_hh.mm.ss")}.jpg";
 
@@ -77,7 +77,7 @@ namespace BoxProtocol
                 File.WriteAllBytes(path, ms.ToArray());
             }
             return new UnaryResult <string>(path);
-        }
+        }*/
 
         /*public UnaryResult<List<Item>> GetOnLocation(GeoLocation point) 
         {
@@ -91,7 +91,7 @@ namespace BoxProtocol
         }*/
         
         // Convert a byte array to an Object
-        public UnaryResult<MediaFile> ByteArrayToObject(byte[] arrBytes)
+        /*public UnaryResult<MediaFile> ByteArrayToObject(byte[] arrBytes)
         {
             using (var memStream = new MemoryStream())
             {
@@ -101,7 +101,7 @@ namespace BoxProtocol
                 var obj = binForm.Deserialize(memStream);
                 return new UnaryResult<MediaFile>((MediaFile)obj);
             }
-        }
+        }*/
 
     }
 }

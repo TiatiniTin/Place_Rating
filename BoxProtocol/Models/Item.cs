@@ -3,6 +3,7 @@ using System;
 using Xamarin.Essentials;
 using MessagePack;
 using Xamarin.Forms;
+using Elasticsearch.Net;
 
 namespace BoxProtocol.Models
 {
@@ -27,5 +28,8 @@ namespace BoxProtocol.Models
         public string Place_description { get; set; }
         [Key(8)]
         public DateTime Time_created { get; set; }
+        [Key(9)]
+        public byte[] Image_arr { get; set; }
+
     }
 }
