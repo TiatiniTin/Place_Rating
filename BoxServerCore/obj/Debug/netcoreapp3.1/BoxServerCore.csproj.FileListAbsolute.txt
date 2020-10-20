@@ -86,4 +86,3 @@ C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxServerCore\bin\Debug\netcoreapp3.1\Sy
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxServerCore\bin\Debug\netcoreapp3.1\System.Reactive.Interfaces.dll
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxServerCore\bin\Debug\netcoreapp3.1\System.Reactive.Linq.dll
 C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxServerCore\bin\Debug\netcoreapp3.1\System.Reactive.PlatformServices.dll
-C:\Users\Vitya\Desktop\Place_Rating 3.0\BoxServerCore\bin\Debug\netcoreapp3.1\Plugin.Media.dll

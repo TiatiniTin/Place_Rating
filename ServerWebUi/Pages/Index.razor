@@ -18,7 +18,10 @@
 {
     public async Task<List<Item>> GetAllItems()
     {
-        var channel = new Channel("localhost", 12345, ChannelCredentials.Insecure);
+        var options = new[] { new ChannelOption("grpc.max_receive_message_length", 1024 * 1024 * 1024), new ChannelOption("grpc.max_send_message_length", 1024 * 1024 * 1024) };
+        //var channel = new Channel("10.0.2.2", 12345, ChannelCredentials.Insecure);
+        var channel = new Channel("127.0.0.1", 12345, ChannelCredentials.Insecure, options);
+        //var channel = new Channel("localhost", 12345, ChannelCredentials.Insecure);
         var DataStore = MagicOnionClient.Create<IServerDB>(channel);
         var items = await DataStore.GetAll();
         return items;
@@ -49,7 +52,7 @@
                     HISTORY
                 </MatHeadline6>
             </div>
-
+           
             <table>
                 @{
                     int counter = 0;
@@ -100,7 +103,7 @@
                             @item.Name
                         </td>
                         <td>
-                            <!--item.Place_image_path-->
+                            <img src="@item.Place_image_path_server">
                         </td>
                         <td>
                             @item.Place_name

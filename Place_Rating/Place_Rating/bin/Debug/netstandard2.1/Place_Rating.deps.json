@@ -1397,7 +1397,6 @@
           "MessagePack.UnityShims": "2.2.60",
           "MessagePackAnalyzer": "2.2.60",
           "NEST": "7.9.0",
-          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2"
         },
         "runtime": {

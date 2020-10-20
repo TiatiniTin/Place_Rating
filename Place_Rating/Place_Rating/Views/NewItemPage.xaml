@@ -17,8 +17,8 @@
                 <!--<Entry Text="{Binding Place_image_path, Mode=TwoWay}" FontSize="Small"/>-->
             <StackLayout Orientation="Horizontal">
                     <Button Text="Take photo" Command="{Binding TakePhotoCommand}" HorizontalOptions="FillAndExpand"></Button>
-                    <!--<Button Text="Pick photo" Command="{Binding PickPhotoCommand}" HorizontalOptions="FillAndExpand"></Button>-->
-            </StackLayout>
+                    <Button Text="Pick photo" Command="{Binding PickPhotoCommand}" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
                 <Label Text="Place name:" FontSize="Medium" />
                 <Entry Text="{Binding Place_name, Mode=TwoWay}" FontSize="Small"/>
             <!--<Label Text="Place location:" FontSize="Medium" />

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XmtejmRY6474Lm0sAnwLmg6v7CCsn0U6zyvcGULAg2FX4xHAH+8g2l/gFpnPGnNIlOOwXF4kd+33Z6S8KUPVXg==",
+  "dgSpecHash": "0E0HovSMPIoWXT+7uZi77FngflkJNIpsBsEi+PIS/RZbDV1r3HPAKrK6ESIZpuVLlQlWTnfc6DTQ6q9gZ9VavA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Vitya\\Desktop\\Place_Rating 3.0\\ServerWebUi\\ServerWebUi.csproj",
   "expectedPackageFiles": [
@@ -111,7 +111,6 @@
     "C:\\Users\\Vitya\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
     "C:\\Users\\Vitya\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Users\\Vitya\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
-    "C:\\Users\\Vitya\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512"
   ],
   "logs": []

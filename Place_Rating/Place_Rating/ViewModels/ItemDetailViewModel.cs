@@ -20,7 +20,8 @@ namespace Place_Rating.ViewModels
         private string place_rating;
         private double place_location_Longitude;
         private double place_location_Latitude;
-        private string place_image_path;
+        private string place_image_path_server;
+        private string place_image_path_client;
         private DateTime time_created;
         private string name;
 
@@ -45,15 +46,15 @@ namespace Place_Rating.ViewModels
         public DateTime Time_created
         {
             get => time_created;
-            set => SetProperty(ref time_created, DateTime.Now);
+            set => SetProperty(ref time_created, value);
         }
         public double Place_location_Latitude
         {
             get => place_location_Latitude;
-            set => SetProperty(ref place_location_Latitude, get_location_Latitude());
+            set => SetProperty(ref place_location_Latitude, value);
         }
 
-        public double get_location_Latitude()
+        /*public double get_location_Latitude()
         {
             try
             {
@@ -88,15 +89,15 @@ namespace Place_Rating.ViewModels
 
             }
             return -1;
-        }
+        }*/
 
         public double Place_location_Longitude
         {
             get => place_location_Longitude;
-            set => SetProperty(ref place_location_Longitude, get_location_Longitude());
+            set => SetProperty(ref place_location_Longitude, value);
         }
 
-        public double get_location_Longitude()
+        /*public double get_location_Longitude()
         {
             try
             {
@@ -131,18 +132,23 @@ namespace Place_Rating.ViewModels
 
             }
             return -1;
-        }
+        }*/
 
         public string Name
         {
             get => name;
             set => SetProperty(ref name, value);
         }
-        public string Place_image_path
+        public string Place_image_path_server
         {
-            get => place_image_path;
-            set => SetProperty(ref place_image_path, value);
-        }
+            get => place_image_path_server;
+            set => SetProperty(ref place_image_path_server, value);
+        }        
+        public string Place_image_path_client
+        {
+            get => place_image_path_client;
+            set => SetProperty(ref place_image_path_client, value);
+        }        
 
         public string ItemId
         {
@@ -162,14 +168,17 @@ namespace Place_Rating.ViewModels
         {
             try
             {
+                //var options = new[] { new ChannelOption("grpc.max_receive_message_length", 1024 * 1024 * 1024), new ChannelOption("grpc.max_send_message_length", 1024 * 1024 * 1024) };
+                var options = new[] { new ChannelOption("grpc.max_receive_message_length", 1024 * 1024 * 1024)};
                 //var channel = new Channel("10.0.2.2", 12345, ChannelCredentials.Insecure);
-                var channel = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure);
+                var channel = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure, options);
                 var DataStore = MagicOnionClient.Create<IServerDB>(channel);
 
                 Item item = await DataStore.Get(itemId);
                 Id = item.Id;
                 Name = item.Name;
-                Place_image_path = item.Place_image_path;
+                Place_image_path_client = item.Place_image_path_client;
+                Place_image_path_server = item.Place_image_path_server;
                 Place_name = item.Place_name;
                 Place_rating = item.Place_rating;
                 Place_location_Latitude = item.Place_location_Latitude;

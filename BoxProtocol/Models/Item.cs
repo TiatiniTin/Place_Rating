@@ -8,14 +8,14 @@ using Elasticsearch.Net;
 namespace BoxProtocol.Models
 {
     [MessagePackObject]
-    public class Item : IHaveID
+    public class Item : IHaveID, IHaveCoordinates
     {
         [Key(0)]
         public string Id { get; set; }
         [Key(1)]
         public string Name { get; set; }
         [Key(2)]
-        public string Place_image_path { get; set; }
+        public string Place_image_path_server { get; set; }
         [Key(3)]
         public string Place_name { get; set; }
         [Key(4)]
@@ -30,6 +30,7 @@ namespace BoxProtocol.Models
         public DateTime Time_created { get; set; }
         [Key(9)]
         public byte[] Image_arr { get; set; }
-
+        [Key(10)]
+        public string Place_image_path_client { get; set; }        
     }
 }

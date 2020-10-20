@@ -25,7 +25,8 @@ namespace Place_Rating.ViewModels
         private string place_rating;
         private double place_location_Longitude;
         private double place_location_Latitude;
-        private string Place_image_path;
+        private string place_image_path_server;
+        private string place_image_path_client;
         private DateTime time_created;
         private string name;
         private byte[] image_arr;
@@ -35,7 +36,7 @@ namespace Place_Rating.ViewModels
             SaveCommand = new Command(OnSave, ValidateSave);
             CancelCommand = new Command(OnCancel);
             TakePhotoCommand = new Command(OnTakePhoto);
-            //PickPhotoCommand = new Command(OnPickPhoto);
+            PickPhotoCommand = new Command(OnPickPhoto);
             this.PropertyChanged +=
                 (_, __) => SaveCommand.ChangeCanExecute();
         }
@@ -67,7 +68,7 @@ namespace Place_Rating.ViewModels
         public DateTime Time_created
         {
             get => time_created;
-            set => SetProperty(ref time_created, DateTime.Now);
+            set => SetProperty(ref time_created, value);
         }
 
         public string Name
@@ -80,11 +81,26 @@ namespace Place_Rating.ViewModels
             get => image_arr;
             set => SetProperty(ref image_arr, value);
         }
-        /*public string Place_image_path
+        public string Place_image_path_server
         {
-            get => place_image_path;
-            set => SetProperty(ref place_image_path, value);
-        }*/
+            get => place_image_path_server;
+            set => SetProperty(ref place_image_path_server, value);
+        }          
+        public string Place_image_path_client
+        {
+            get => place_image_path_client;
+            set => SetProperty(ref place_image_path_client, value);
+        }          
+        public double Place_location_Latitude
+        {
+            get => place_location_Latitude;
+            set => SetProperty(ref place_location_Latitude, value);
+        }
+        public double Place_location_Longitude
+        {
+            get => place_location_Longitude;
+            set => SetProperty(ref place_location_Longitude, value);
+        }
 
         public Command SaveCommand { get; }
         public Command CancelCommand { get; }
@@ -97,29 +113,32 @@ namespace Place_Rating.ViewModels
 
         private async void OnSave()
         {
+            var options = new[] { new ChannelOption("grpc.max_receive_message_length", 1024 * 1024 * 1024)};
+            //var options = new[] { new ChannelOption("grpc.max_receive_message_length", 1024 * 1024 * 1024), new ChannelOption("grpc.max_send_message_length", 1024 * 1024 * 1024) };
             //var channel = new Channel("10.0.2.2", 12345, ChannelCredentials.Insecure);
-            var channel = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure);
+            var channel = new Channel("192.168.1.69", 12345, ChannelCredentials.Insecure, options);
             var DataStore = MagicOnionClient.Create<IServerDB>(channel);
 
-            using (FileStream fstream = File.OpenRead(Place_image_path))
+            using (FileStream fstream = File.OpenRead(Place_image_path_client))
             {
                 byte[] array = new byte[fstream.Length];
                 fstream.Read(array, 0, array.Length);
-                Image_arr = MessagePackSerializer.Serialize(array);
+                Image_arr = array;
             }
 
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = Name,
-                Place_image_path = null,
+                Place_image_path_server = "null",
+                Place_image_path_client = Place_image_path_client,
                 Place_name = Place_name,
                 Place_rating = Place_rating,
                 //Place_location_ = Geolocation.GetLastKnownLocationAsync().Result,
                 Place_location_Latitude = Geolocation.GetLastKnownLocationAsync().Result.Latitude,
                 Place_location_Longitude = Geolocation.GetLastKnownLocationAsync().Result.Longitude,
                 Place_description = Place_description,             
-                Time_created = Time_created,
+                Time_created = DateTime.Now,
                 Image_arr = Image_arr
             };
 
@@ -130,7 +149,7 @@ namespace Place_Rating.ViewModels
         }
 
         public Command TakePhotoCommand { get; }
-        //public Command PickPhotoCommand { get; }
+        public Command PickPhotoCommand { get; }
 
         private async void OnTakePhoto()
         {
@@ -145,20 +164,20 @@ namespace Place_Rating.ViewModels
 
                 if (photo == null)
                     return;
-
-                Place_image_path = ImageSource.FromFile(photo.Path).ToString();
+                Place_image_path_client = ImageSource.FromFile(photo.Path).ToString().Split(' ')[1];
             }
 
         }
 
-        /*private async void OnPickPhoto()
+        private async void OnPickPhoto()
         {
             if (CrossMedia.Current.IsPickPhotoSupported)
             {
                 MediaFile photo = await CrossMedia.Current.PickPhotoAsync();
+                Place_image_path_client = ImageSource.FromFile(photo.Path).ToString().Split(' ')[1];
                 //img.Source = ImageSource.FromFile(photo.Path);
                 //return;
             }
-        }*/
+        }
     }
 }

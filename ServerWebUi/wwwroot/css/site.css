@@ -186,4 +186,8 @@ table td {
     padding:10px;
 }
 
+img {
+    max-width:150px;
+}
+
 

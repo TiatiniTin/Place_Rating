@@ -13,12 +13,12 @@ using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+
 namespace BoxServerCore
 {
     internal class Program
     {
         private static async Task Main(string[] args)
-
         {
             //un services
             var magicOnionHost = MagicOnionHost.CreateDefaultBuilder()
@@ -40,6 +40,11 @@ namespace BoxServerCore
                         );
                         // add the following codes
                         collection.Configure<KestrelServerOptions>(options => { options.AllowSynchronousIO = true; });
+                        collection.Configure<MagicOnionHostingOptions>(options => 
+                        { 
+                            options.ChannelOptions.MaxReceiveMessageLength = 1024 * 1024 * 1024;
+                            options.ChannelOptions.MaxSendMessageLength = 1024 * 1024 * 1024;
+                        });
                     }
                 )
                 .UseKestrel()

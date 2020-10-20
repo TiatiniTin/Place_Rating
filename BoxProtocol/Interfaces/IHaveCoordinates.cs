@@ -10,6 +10,7 @@ namespace BoxProtocol.Interfaces
 {
     public interface IHaveCoordinates
     {
-        Location Place_location { get; set; }
+        double Place_location_Latitude { get; set; }
+        double Place_location_Longitude { get; set; }
     }
 }

@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using BoxProtocol.Models;
 using Xamarin.Essentials;
 using MagicOnion;
-using Plugin.Media.Abstractions;
 
 namespace BoxProtocol.Interfaces
 {
@@ -13,13 +12,11 @@ namespace BoxProtocol.Interfaces
     {
         UnaryResult<bool> Add(Item item);
         UnaryResult<bool> Update(Item updated);
-        //UnaryResult<bool> Delete(string id);
         UnaryResult<Item>  Get(string id);
         UnaryResult<List<Item>>  GetAll();
-        //UnaryResult<string> SaveImage(MediaFile photo);
-        //UnaryResult<MediaFile> ByteArrayToObject(byte[] arrBytes);
+        UnaryResult<string> SaveImage(byte[] array);
 
+        //UnaryResult<bool> Delete(string id);
         //UnaryResult<List<Item>> GetOnLocation(GeoLocation point);
-        //Task<IEnumerable<T>> GetItemsAsync(bool forceRefresh = false);
     }
 }

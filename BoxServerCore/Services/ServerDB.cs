@@ -8,10 +8,10 @@ using Nest;
 using MagicOnion.Server;
 using MagicOnion;
 using System.Collections.Generic;
-using Plugin.Media.Abstractions;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using static System.Net.Mime.MediaTypeNames;
+using MessagePack;
 
 namespace BoxProtocol
 {
@@ -44,13 +44,6 @@ namespace BoxProtocol
             Client().Update<Item>(updated.Id, descriptor => descriptor.Doc(updated).Index("data_base"));
             return new UnaryResult<bool>(true);
         }
-
-        /*public UnaryResult<bool> Delete(string id) 
-        {
-            Client().Delete<Item>(id, descriptor => descriptor.Index("data_base"));
-            return new UnaryResult<bool>(true);
-        }*/
-
         public UnaryResult<Item> Get(string id) 
         {
             var doc = Client().Get<Item>(id, idx => idx.Index("data_base"));
@@ -66,18 +59,25 @@ namespace BoxProtocol
             return new UnaryResult<List<Item>>(docs.Documents.ToList());
         }
 
-        /*public UnaryResult<string> SaveImage(MediaFile photo)
+        public UnaryResult<string> SaveImage(byte[] array)
         {
-            var path = $"/Place_Rating/photo/{DateTime.Now.ToString("dd.MM.yyyy_hh.mm.ss")}.jpg";
-
-            BinaryFormatter bf = new BinaryFormatter();
-            using (var ms = new MemoryStream())
+            //string path1 = Path.Combine(Directory.GetCurrentDirectory(), $"/{DateTime.Now.ToString("dd.MM.yyyy_hh.mm.ss")}.jpg");
+            string path = @"C:/Users/Vitya/Desktop/Place_Rating 3.0/ServerWebUi/wwwroot/Images";
+            DirectoryInfo dirInfo = new DirectoryInfo(path);
+            if (!dirInfo.Exists)
             {
-                bf.Serialize(ms, photo); 
-                File.WriteAllBytes(path, ms.ToArray());
+                dirInfo.Create();
             }
-            return new UnaryResult <string>(path);
-        }*/
+
+            string image_path = $"{path}/{DateTime.Now.ToString("dd.MM.yyyy_hh.mm.ss")}.jpg";
+  
+            using (FileStream fstream = new FileStream(image_path, FileMode.OpenOrCreate))
+            {
+                fstream.Write(array, 0, array.Length);
+            }
+
+            return new UnaryResult <string>(image_path.Split("ot/")[1]);
+        }
 
         /*public UnaryResult<List<Item>> GetOnLocation(GeoLocation point) 
         {
@@ -89,20 +89,12 @@ namespace BoxProtocol
             );
             return new UnaryResult<List<Item>>(docs.Documents.ToList());
         }*/
-        
-        // Convert a byte array to an Object
-        /*public UnaryResult<MediaFile> ByteArrayToObject(byte[] arrBytes)
-        {
-            using (var memStream = new MemoryStream())
-            {
-                var binForm = new BinaryFormatter();
-                memStream.Write(arrBytes, 0, arrBytes.Length);
-                memStream.Seek(0, SeekOrigin.Begin);
-                var obj = binForm.Deserialize(memStream);
-                return new UnaryResult<MediaFile>((MediaFile)obj);
-            }
-        }*/
 
+        /*public UnaryResult<bool> Delete(string id) 
+        {
+            Client().Delete<Item>(id, descriptor => descriptor.Index("data_base"));
+            return new UnaryResult<bool>(true);
+        }*/
     }
 }
 

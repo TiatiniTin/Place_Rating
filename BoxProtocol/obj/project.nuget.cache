@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZkWoZAJvOmUxgYxmuE/D+tjLyKyyT79T32G4B70HXSHuRCSii8GKXTmD1otg1JToBulYuQs+gorzSmjNoXILVA==",
+  "dgSpecHash": "EVPIvYv66f6wKcOhp3mrhASqe5XHOt0OVflmnWPZ+F31AHnHoYlZf3hom4odRBK546CI/W2CSFjdBQ5EqXfrlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Vitya\\Desktop\\Place_Rating 3.0\\BoxProtocol\\BoxProtocol.csproj",
   "expectedPackageFiles": [
@@ -122,7 +122,6 @@
     "C:\\Users\\Vitya\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Vitya\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Vitya\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Vitya\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512"
   ],
   "logs": []

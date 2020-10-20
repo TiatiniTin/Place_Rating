@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <PackageReference Include="MagicOnion" Version="3.0.13" />
     <PackageReference Include="NEST" Version="7.9.0" />
@@ -15,9 +15,5 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\BoxProtocol\BoxProtocol.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Sample\" />
   </ItemGroup>
 </Project>
