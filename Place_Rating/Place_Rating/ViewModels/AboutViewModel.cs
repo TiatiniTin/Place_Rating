@@ -10,7 +10,7 @@ namespace Place_Rating.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("#"));
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://youtu.be/qP4gxNPGzC4"));
         }
 
         public ICommand OpenWebCommand { get; }
